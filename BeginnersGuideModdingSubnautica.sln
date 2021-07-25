@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstSubnauticaMod_BZ", "MyFirstSubnauticaMod_BZ\MyFirstSubnauticaMod_BZ.csproj", "{9F31782C-7B97-44BE-BBE5-6DB23DF77B6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Below Zero|Any CPU = Below Zero|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Subnautica|Any CPU = Subnautica|Any CPU
+		Test|Any CPU = Test|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F31782C-7B97-44BE-BBE5-6DB23DF77B6F}.Below Zero|Any CPU.ActiveCfg = Below Zero|Any CPU
+		{9F31782C-7B97-44BE-BBE5-6DB23DF77B6F}.Below Zero|Any CPU.Build.0 = Below Zero|Any CPU
+		{9F31782C-7B97-44BE-BBE5-6DB23DF77B6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F31782C-7B97-44BE-BBE5-6DB23DF77B6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F31782C-7B97-44BE-BBE5-6DB23DF77B6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F31782C-7B97-44BE-BBE5-6DB23DF77B6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F31782C-7B97-44BE-BBE5-6DB23DF77B6F}.Subnautica|Any CPU.ActiveCfg = Subnautica|Any CPU
+		{9F31782C-7B97-44BE-BBE5-6DB23DF77B6F}.Subnautica|Any CPU.Build.0 = Subnautica|Any CPU
+		{9F31782C-7B97-44BE-BBE5-6DB23DF77B6F}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{9F31782C-7B97-44BE-BBE5-6DB23DF77B6F}.Test|Any CPU.Build.0 = Test|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64A0D31D-5371-447F-932A-2E7BA048CC37}
+	EndGlobalSection
+EndGlobal
