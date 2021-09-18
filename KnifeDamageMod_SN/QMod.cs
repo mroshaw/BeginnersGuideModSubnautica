@@ -7,7 +7,7 @@ using SMLHelper.V2.Json;
 using SMLHelper.V2.Options.Attributes;
 using SMLHelper.V2.Handlers;
 
-namespace MyFirstSubnauticaMod_BZ
+namespace KnifeDamageMod_SN
 {
     [QModCore]
     public static class QMod
@@ -20,7 +20,7 @@ namespace MyFirstSubnauticaMod_BZ
         public static void Patch()
         {
             var assembly = Assembly.GetExecutingAssembly();
-            var modName = ($"<someuniquevalue>_{assembly.GetName().Name}");
+            var modName = ($"mroshawmods_{assembly.GetName().Name}");
             Logger.Log(Logger.Level.Info, $"Patching {modName}");
             Harmony harmony = new Harmony(modName);
             harmony.PatchAll(assembly);
@@ -30,10 +30,10 @@ namespace MyFirstSubnauticaMod_BZ
     }
 
     /// <summary>
-    /// ### Enhancing the mod ###
+    // ### Enhancing the mod ###
     /// Set up the Mod menu
     /// </summary>
-    [Menu("My First Mod")]
+    [Menu("Knife Damage")]
     public class Config : ConfigFile
     {
         /// <summary>

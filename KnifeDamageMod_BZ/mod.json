@@ -4,7 +4,7 @@
   "Author": "Oli Ollerenshaw",
   "Version": "1.0.0",
   "Enable": true,
-  "AssemblyName": "MyFirstSubnauticaMod_BZ.dll",
+  "AssemblyName": "KnifeDamageMod_BZ.dll",
   "VersionDependencies": {
     "SMLHelper": "2.9.6"
   },

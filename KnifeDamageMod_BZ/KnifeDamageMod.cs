@@ -1,16 +1,16 @@
 ﻿using HarmonyLib;
 using Logger = QModManager.Utility.Logger;
 
-namespace MyFirstSubnauticaMod_BZ
+namespace KnifeDamageMod_BZ
 {
     /// <summary>
     /// Class to mod the knife
     /// </summary>
-    class MyFirstMod
+    class KnifeDamageMod
     {
         [HarmonyPatch(typeof(Knife))]
         [HarmonyPatch("Start")]
-        internal class KnifeDamageMod
+        internal class PatchKnifeStart
         {
             [HarmonyPostfix]
             public static void Postfix(Knife __instance)

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31402.337
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstSubnauticaMod_BZ", "MyFirstSubnauticaMod_BZ\MyFirstSubnauticaMod_BZ.csproj", "{9F31782C-7B97-44BE-BBE5-6DB23DF77B6F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnifeDamageMod_BZ", "KnifeDamageMod_BZ\KnifeDamageMod_BZ.csproj", "{9F31782C-7B97-44BE-BBE5-6DB23DF77B6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnifeDamageMod_SN", "KnifeDamageMod_SN\KnifeDamageMod_SN.csproj", "{7A7C969A-59EB-40FC-A30A-2A0C954E34EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,11 +26,23 @@ Global
 		{9F31782C-7B97-44BE-BBE5-6DB23DF77B6F}.Subnautica|Any CPU.Build.0 = Subnautica|Any CPU
 		{9F31782C-7B97-44BE-BBE5-6DB23DF77B6F}.Test|Any CPU.ActiveCfg = Test|Any CPU
 		{9F31782C-7B97-44BE-BBE5-6DB23DF77B6F}.Test|Any CPU.Build.0 = Test|Any CPU
+		{7A7C969A-59EB-40FC-A30A-2A0C954E34EF}.Below Zero|Any CPU.ActiveCfg = Below Zero|Any CPU
+		{7A7C969A-59EB-40FC-A30A-2A0C954E34EF}.Below Zero|Any CPU.Build.0 = Below Zero|Any CPU
+		{7A7C969A-59EB-40FC-A30A-2A0C954E34EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A7C969A-59EB-40FC-A30A-2A0C954E34EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A7C969A-59EB-40FC-A30A-2A0C954E34EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A7C969A-59EB-40FC-A30A-2A0C954E34EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A7C969A-59EB-40FC-A30A-2A0C954E34EF}.Subnautica|Any CPU.ActiveCfg = Subnautica|Any CPU
+		{7A7C969A-59EB-40FC-A30A-2A0C954E34EF}.Subnautica|Any CPU.Build.0 = Subnautica|Any CPU
+		{7A7C969A-59EB-40FC-A30A-2A0C954E34EF}.Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A7C969A-59EB-40FC-A30A-2A0C954E34EF}.Test|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {64A0D31D-5371-447F-932A-2E7BA048CC37}
+		    SolutionGuid = {1A23E9F3-FE4A-4C2C-B4E9-DAB16497E558}
+		        SolutionGuid = {64A0D31D-5371-447F-932A-2E7BA048CC37}
+		SolutionGuid = {089AD4BB-A329-4732-8AA1-ECC0192B80F3}
 	EndGlobalSection
 EndGlobal
