@@ -1,17 +1,16 @@
 ﻿using HarmonyLib;
 using Logger = QModManager.Utility.Logger;
 
-
-namespace KnifeDamageMod_SN
+namespace Mroshaw.KnifeDamageMod_SN
 {
     class KnifeDamageMod
     {
         [HarmonyPatch(typeof(PlayerTool))]
         [HarmonyPatch("Awake")]
-        internal class PatchPlayerToolAwake
+        internal class Patch_PlayerTool
         {
             [HarmonyPostfix]
-            public static void Postfix(PlayerTool __instance)
+            public static void Awake_Postfix(PlayerTool __instance)
             {
                 // Check to see if this is the knife
                 if (__instance.GetType() == typeof(Knife))
@@ -26,6 +25,8 @@ namespace KnifeDamageMod_SN
                     float knifeDamage = knife.damage;
                     float newKnifeDamage = knifeDamage * damageModifier;
                     knife.damage = newKnifeDamage;
+
+                    // Write to the QMM log file
                     Logger.Log(Logger.Level.Debug, $"Knife damage was: {knifeDamage}," +
                         $" is now: {newKnifeDamage}");
                 }

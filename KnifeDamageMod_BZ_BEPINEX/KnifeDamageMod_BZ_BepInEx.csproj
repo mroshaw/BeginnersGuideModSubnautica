@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9F31782C-7B97-44BE-BBE5-6DB23DF77B6F}</ProjectGuid>
+    <ProjectGuid>{55DFC976-0792-4622-93BB-459C831C96A3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>KnifeDamageMod_BZ</RootNamespace>
@@ -59,11 +59,8 @@
     <Reference Include="Assembly-CSharp_publicized">
       <HintPath>..\..\..\..\..\..\..\Games\Steam\steamapps\common\SubnauticaZero\SubnauticaZero_Data\Managed\publicized_assemblies\Assembly-CSharp_publicized.dll</HintPath>
     </Reference>
-    <Reference Include="QModInstaller">
-      <HintPath>..\..\..\Games\Steam\steamapps\common\SubnauticaZero\BepInEx\plugins\QModManager\QModInstaller.dll</HintPath>
-    </Reference>
-    <Reference Include="SMLHelper">
-      <HintPath>..\..\..\Games\Steam\steamapps\common\SubnauticaZero\QMods\SMLHelper_BZ\SMLHelper.dll</HintPath>
+    <Reference Include="BepInEx">
+      <HintPath>..\..\..\Games\Steam\steamapps\common\SubnauticaZero\BepInEx\core\BepInEx.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -84,6 +81,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="KinfeDamagePlugin_BZ.cs" />
     <Compile Include="KnifeDamageMod_BZ.cs" />
     <Compile Include="QMod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -93,8 +91,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>mkdir "E:\Games\Steam\steamapps\common\SubnauticaZero\QMods\$(TargetName)"
-copy /Y "$(TargetPath)" "E:\Games\Steam\steamapps\common\SubnauticaZero\QMods\$(TargetName)"
-copy /Y "$(ProjectDir)\mod.json" "E:\Games\Steam\steamapps\common\SubnauticaZero\QMods\$(TargetName)\mod.json"</PostBuildEvent>
+    <PostBuildEvent>mkdir "E:\Games\Steam\steamapps\common\SubnauticaZero\BepInEx\plugins\$(TargetName)"
+copy /Y "$(TargetPath)" "E:\Games\Steam\steamapps\common\SubnauticaZero\BepInEx\plugins\$(TargetName)"</PostBuildEvent>
   </PropertyGroup>
 </Project>

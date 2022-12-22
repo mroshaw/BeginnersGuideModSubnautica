@@ -1,12 +1,11 @@
 ﻿using HarmonyLib;
-using Logger = QModManager.Utility.Logger;
 
-namespace KnifeDamageMod_BZ
+namespace Mroshaw.KnifeDamageModBZ
 {
     /// <summary>
     /// Class to mod the knife
     /// </summary>
-    class KnifeDamageMod
+    class KnifeDamageMod_BZ
     {
         [HarmonyPatch(typeof(Knife))]
         [HarmonyPatch("Start")]
@@ -15,15 +14,11 @@ namespace KnifeDamageMod_BZ
             [HarmonyPostfix]
             public static void Postfix(Knife __instance)
             {
-                // ### Enhancing the mod ###
-                // Get the damage modifier
-                float damageModifier = QMod.Config.KnifeModifier;
                 // Double the knife damage
                 float knifeDamage = __instance.damage;
-                float newKnifeDamage = knifeDamage * damageModifier;
+                float newKnifeDamage = knifeDamage * 2.0f;
                 __instance.damage = newKnifeDamage;
-                Logger.Log(Logger.Level.Debug, $"Knife damage was: {knifeDamage}," +
-                    $" is now: {newKnifeDamage}");
+                KnifeDamagePlugin.logger.LogInfo($"Knife damage was: {knifeDamage}, is now: {newKnifeDamage}");
             }
         }
     }

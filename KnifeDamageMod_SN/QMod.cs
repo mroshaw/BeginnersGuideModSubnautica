@@ -7,7 +7,7 @@ using SMLHelper.V2.Json;
 using SMLHelper.V2.Options.Attributes;
 using SMLHelper.V2.Handlers;
 
-namespace KnifeDamageMod_SN
+namespace Mroshaw.KnifeDamageMod_SN
 {
     [QModCore]
     public static class QMod
@@ -20,12 +20,11 @@ namespace KnifeDamageMod_SN
         public static void Patch()
         {
             var assembly = Assembly.GetExecutingAssembly();
-            var modName = ($"mroshawmods_{assembly.GetName().Name}");
+            var modName = ($"mroshawmods.{assembly.GetName().Name}");
             Logger.Log(Logger.Level.Info, $"Patching {modName}");
             Harmony harmony = new Harmony(modName);
             harmony.PatchAll(assembly);
             Logger.Log(Logger.Level.Info, "Patched successfully!");
-
         }
     }
 
@@ -40,7 +39,7 @@ namespace KnifeDamageMod_SN
         /// Slider element for float value of the modifiers. We'll allow 1.0 (unchanged) to 5.0 (death bringer).
         /// Default to 1.0;
         /// </summary>
-        [Slider("Knife modifier", Format = "{0:F2}", Min = 1.0F, Max = 5.0F, DefaultValue = 1.0F, Step = 0.1F)]
-        public float KnifeModifier = 1.0F;
+        [Slider("Knife modifier", Format = "{0:F2}", Min = 1.0f, Max = 5.0f, DefaultValue = 1.0f, Step = 0.1f)]
+        public float KnifeModifier = 1.0f;
     }
 }
