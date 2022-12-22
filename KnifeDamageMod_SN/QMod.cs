@@ -7,7 +7,7 @@ using SMLHelper.V2.Json;
 using SMLHelper.V2.Options.Attributes;
 using SMLHelper.V2.Handlers;
 
-namespace Mroshaw.KnifeDamageMod_SN
+namespace Mroshaw.KnifeDamageModSN
 {
     [QModCore]
     public static class QMod

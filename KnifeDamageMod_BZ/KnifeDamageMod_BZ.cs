@@ -1,7 +1,7 @@
 ﻿using HarmonyLib;
 using Logger = QModManager.Utility.Logger;
 
-namespace Mroshaw.KnifeDamageMod_BZ
+namespace Mroshaw.KnifeDamageModBZ
 {
     /// <summary>
     /// Class to mod the knife

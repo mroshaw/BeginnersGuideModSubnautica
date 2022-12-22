@@ -62,11 +62,7 @@
   <ItemGroup>
     <Compile Include="KnifeDamageMod_SN.cs" />
     <Compile Include="KnifeDamagePlugin_SN.cs" />
-    <Compile Include="QMod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="mod.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

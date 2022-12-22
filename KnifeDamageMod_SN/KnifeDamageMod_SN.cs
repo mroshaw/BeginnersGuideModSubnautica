@@ -1,7 +1,7 @@
 ﻿using HarmonyLib;
 using Logger = QModManager.Utility.Logger;
 
-namespace Mroshaw.KnifeDamageMod_SN
+namespace Mroshaw.KnifeDamageModSN
 {
     public static class KnifeDamageMod_SN
     {

@@ -18,7 +18,7 @@ namespace Mroshaw.KnifeDamageModBZ
                 float knifeDamage = __instance.damage;
                 float newKnifeDamage = knifeDamage * 2.0f;
                 __instance.damage = newKnifeDamage;
-                KnifeDamagePlugin.logger.LogInfo($"Knife damage was: {knifeDamage}, is now: {newKnifeDamage}");
+                KnifeDamagePlugin_BZ.logger.LogInfo($"Knife damage was: {knifeDamage}, is now: {newKnifeDamage}");
             }
         }
     }

@@ -5,7 +5,7 @@ using HarmonyLib;
 namespace Mroshaw.KnifeDamageModBZ
 {
     [BepInPlugin(myGUID, pluginName, versionString)]
-    public class KnifeDamagePlugin : BaseUnityPlugin
+    public class KnifeDamagePlugin_BZ : BaseUnityPlugin
     {
         private const string myGUID = "com.mroshaw.knifedamagemodbz";
         private const string pluginName = "Knife Damage Mod BZ";
@@ -19,6 +19,7 @@ namespace Mroshaw.KnifeDamageModBZ
         {
             harmony.PatchAll();
             Logger.LogInfo(pluginName + " " + versionString + " " + "loaded.");
+            logger = Logger;
         }
     }
 }
