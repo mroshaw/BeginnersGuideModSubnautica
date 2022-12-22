@@ -9,7 +9,7 @@ namespace Mroshaw.KnifeDamageModSN
     public static class KnifeDamageMod_SN
     {
         [HarmonyPatch(typeof(PlayerTool))]
-        public static class PatchPlayerTool_Patches
+        public static class PlayerTool_Patch
         {
             [HarmonyPatch(nameof(PlayerTool.Awake))]
             [HarmonyPostfix]

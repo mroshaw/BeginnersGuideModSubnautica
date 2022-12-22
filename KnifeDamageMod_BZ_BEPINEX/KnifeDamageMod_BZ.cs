@@ -5,14 +5,14 @@ namespace Mroshaw.KnifeDamageModBZ
     /// <summary>
     /// Class to mod the knife
     /// </summary>
-    class KnifeDamageMod_BZ
+    public static class KnifeDamageMod_BZ
     {
         [HarmonyPatch(typeof(Knife))]
-        [HarmonyPatch("Start")]
-        internal class PatchKnifeStart
+        public static class Knife_Patch
         {
+            [HarmonyPatch(nameof(Knife.Start))]
             [HarmonyPostfix]
-            public static void Postfix(Knife __instance)
+            public static void Start_Postfix(Knife __instance)
             {
                 // Double the knife damage
                 float knifeDamage = __instance.damage;

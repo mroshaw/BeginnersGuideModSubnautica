@@ -3,12 +3,12 @@ using Logger = QModManager.Utility.Logger;
 
 namespace Mroshaw.KnifeDamageMod_SN
 {
-    class KnifeDamageMod
+    public static class KnifeDamageMod_SN
     {
         [HarmonyPatch(typeof(PlayerTool))]
-        [HarmonyPatch("Awake")]
-        internal class Patch_PlayerTool
+        public static class PlayerTool_Patch
         {
+            [HarmonyPatch(nameof(PlayerTool.Awake))]
             [HarmonyPostfix]
             public static void Awake_Postfix(PlayerTool __instance)
             {
