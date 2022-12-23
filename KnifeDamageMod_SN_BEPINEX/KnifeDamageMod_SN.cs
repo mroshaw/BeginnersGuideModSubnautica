@@ -18,12 +18,19 @@ namespace Mroshaw.KnifeDamageModSN
                 // Check to see if this is the knife
                 if (__instance.GetType() == typeof(Knife))
                 {
+                    // Enhancing the MOD
+                    // Get the damage multiplier from the config file.
+                    float damageMultiplier = KnifeDamagePlugin_SN.ConfigKnifeDamageMultiplier.Value;
+
+                    // Get the Knife instance
                     Knife knife = __instance as Knife;
-                    // Double the knife damage
+
+                    // Apply the damage multiplier
                     float knifeDamage = knife.damage;
-                    float newKnifeDamage = knifeDamage * 2.0f;
+                    float newKnifeDamage = knifeDamage * damageMultiplier;
                     knife.damage = newKnifeDamage;
   
+                    // Write to the BepInEx log
                     KnifeDamagePlugin_SN.logger.Log(LogLevel.Info, $"Knife damage was: {knifeDamage}," +
                         $" is now: {newKnifeDamage}");
                 }

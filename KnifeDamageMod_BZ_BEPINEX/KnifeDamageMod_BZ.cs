@@ -14,11 +14,18 @@ namespace Mroshaw.KnifeDamageModBZ
             [HarmonyPostfix]
             public static void Start_Postfix(Knife __instance)
             {
-                // Double the knife damage
+                // Enhancing the MOD
+                // Get the damage multiplier from the config file.
+                float damageMultiplier = KnifeDamagePlugin_BZ.ConfigKnifeDamageMultiplier.Value;
+
+                // Apply the damage multiplier
                 float knifeDamage = __instance.damage;
-                float newKnifeDamage = knifeDamage * 2.0f;
+                float newKnifeDamage = knifeDamage * damageMultiplier;
                 __instance.damage = newKnifeDamage;
-                KnifeDamagePlugin_BZ.logger.LogInfo($"Knife damage was: {knifeDamage}, is now: {newKnifeDamage}");
+
+                // Write to the BepInEx log
+                KnifeDamagePlugin_BZ.logger.LogInfo($"Knife damage was: {knifeDamage}," +
+                    $" is now: {newKnifeDamage}");
             }
         }
     }
