@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("KnifeDamageMod_BZ")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("KnifeDamageMod")]
+[assembly: AssemblyDescription("A Subnautica mod to increase the damage of the knife")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("KnifeDamageMod_BZ")]
-[assembly: AssemblyCopyright("Copyright ©  2021")]
+[assembly: AssemblyCompany("Daft Apple Games")]
+[assembly: AssemblyProduct("KnifeDamageMod")]
+[assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("9f31782c-7b97-44be-bbe5-6db23df77b6f")]
+[assembly: Guid("3e98c17d-1647-49c5-b945-e6ac47b67689")]
 
 // Version information for an assembly consists of the following four values:
 //
