@@ -2,11 +2,11 @@
 using BepInEx.Logging;
 using HarmonyLib;
 using Nautilus.Handlers;
-using static OVRHaptics;
 
 namespace DaftAppleGames.KnifeDamageMod
 {
     [BepInPlugin(MyGuid, PluginName, VersionString)]
+    [BepInDependency("com.snmodding.nautilus")] // marks Nautilus as a dependency for this mod
     public class KnifeDamagePlugin : BaseUnityPlugin
     {
         private const string MyGuid = "com.daftapplegames.knifedamagemod";
